@@ -1,6 +1,6 @@
 import React from "react";
-import Book from "./Book";
-const BookList = (props) => {
+import Book from "./BOOK";
+const BookList = () => {
   const books = [
     { title: "Book 1", author: "Author 1", year: 2020 },
     { title: "Book 2", author: "Author 2", year: 2018 },
@@ -9,29 +9,21 @@ const BookList = (props) => {
   ];
   return (
     <div>
-      <ul>
-        <li>
-          <Book
-            title={books[0].title}
-            author={books[0].author}
-            year={books[0].year}
-          />
-        </li>
-        <li>
-          <Book
-            title={books[1].title}
-            author={books[1].author}
-            year={books[1].year}
-          />
-        </li>
-        <li>
-          <Book
-            title={books[2].title}
-            author={books[2].author}
-            year={books[2].year}
-          />
-        </li>
-      </ul>
+      <Book
+        title={books[0].title}
+        author={books[0].title}
+        year={books[0].year}
+      />
+      <Book
+        title={books[1].title}
+        author={books[1].title}
+        year={books[1].year}
+      />
+      <Book
+        title={books[2].title}
+        author={books[2].title}
+        year={books[2].year}
+      />
     </div>
   );
 };

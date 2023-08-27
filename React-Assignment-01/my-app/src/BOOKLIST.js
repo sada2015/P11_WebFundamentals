@@ -1,6 +1,6 @@
 import React from "react";
-import BOOK from "./BOOK";
-const BOOKLIST = (props) => {
+import Book from "./Book";
+const BookList = (props) => {
   const books = [
     { title: "Book 1", author: "Author 1", year: 2020 },
     { title: "Book 2", author: "Author 2", year: 2018 },
@@ -11,21 +11,21 @@ const BOOKLIST = (props) => {
     <div>
       <ul>
         <li>
-          <BOOK
+          <Book
             title={books[0].title}
             author={books[0].author}
             year={books[0].year}
           />
         </li>
         <li>
-          <BOOK
+          <Book
             title={books[1].title}
             author={books[1].author}
             year={books[1].year}
           />
         </li>
         <li>
-          <BOOK
+          <Book
             title={books[2].title}
             author={books[2].author}
             year={books[2].year}
@@ -36,4 +36,4 @@ const BOOKLIST = (props) => {
   );
 };
 
-export default BOOKLIST;
+export default BookList;

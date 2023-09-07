@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Book from "../src/Book";
+import BookDetail from "./BookDetail";
+import WithLogging from "./WithLogging";
 export default class BookList extends Component {
   constructor(props) {
     super(props);
@@ -15,21 +17,26 @@ export default class BookList extends Component {
   render() {
     return (
       <div>
-        <Book
-          title={this.state.books[0].title}
-          author={this.state.books[0].author}
-          year={this.state.books[0].year}
-        />
-        <Book
-          title={this.state.books[1].title}
-          author={this.state.books[1].author}
-          year={this.state.books[1].year}
-        />
-        <Book
-          title={this.state.books[2].title}
-          author={this.state.books[2].author}
-          year={this.state.books[2].year}
-        />
+        <WithLogging>
+          <Book
+            title={this.state.books[0].title}
+            author={this.state.books[0].author}
+            year={this.state.books[0].year}
+          />
+          <Book
+            title={this.state.books[1].title}
+            author={this.state.books[1].author}
+            year={this.state.books[1].year}
+          />
+          <Book
+            title={this.state.books[2].title}
+            author={this.state.books[2].author}
+            year={this.state.books[2].year}
+          />
+        </WithLogging>
+        <WithLogging>
+          <BookDetail book={this.state.books} />
+        </WithLogging>
       </div>
     );
   }

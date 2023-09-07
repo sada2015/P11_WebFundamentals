@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-export default class Book extends Component {
+export default class Book extends PureComponent {
   constructor(props) {
     super(props);
     console.log("djdjdjd", props);

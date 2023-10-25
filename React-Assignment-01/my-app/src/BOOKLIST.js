@@ -8,23 +8,25 @@ const BookList = () => {
     // Add more books if you'd like
   ];
   return (
-    <div>
-      <Book
-        title={books[0].title}
-        author={books[0].title}
-        year={books[0].year}
-      />
-      <Book
-        title={books[1].title}
-        author={books[1].title}
-        year={books[1].year}
-      />
-      <Book
-        title={books[2].title}
-        author={books[2].title}
-        year={books[2].year}
-      />
-    </div>
+    <>
+      <div>
+        <Book
+          title={books[0].title}
+          author={books[0].title}
+          year={books[0].year}
+        />
+        <Book
+          title={books[1].title}
+          author={books[1].title}
+          year={books[1].year}
+        />
+        <Book
+          title={books[2].title}
+          author={books[2].title}
+          year={books[2].year}
+        />
+      </div>
+    </>
   );
 };
 

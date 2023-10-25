@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message Creator</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Happy Birthday Message Creator </h1>
+    <form action="" method="post" enctype='multipart/form-data'
+        style="align-items:center;align-content: center;vertical-align:middle">
+        <p>
+            <label for="Message" aria-labelledby="Name">
+                Message?
+            </label>
+            <input type="text" name="Message" id="Message" placeholder="Happy Birthday!">
+        </p>
+        <p>
+            <label for="Email" aria-labelledby="Email">
+                Email Address?
+            </label>
+            <input type="email" name="" id="Email" placeholder="name@domain.com"
+                pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+        </p>
+        <p>
+            <label for="datetosend">Date To Send?</label>
+            <input type="date" name="datetosend" id="datetosend" placeholder="mm/dd/yyyy">
+        </p>
+        <p>
+            <label for="msgcolor">Date To Send?</label>
+            <input type="color" name="msgcolor" id="msgcolor">
+        </p>
+        <p>
+            <label for="nbrblinks">Number of Blinks?</label>
+            <input type="number" name="nbrblinks" id="nbrblinks" placeholder="0">
+        </p>
+        <p>
+            <label>Music Volume?</label>
+            <input type="range" name="volume" id="volume">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+
+    </form>
+</body>
+
+</html>
